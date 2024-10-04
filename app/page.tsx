@@ -1,101 +1,82 @@
 import Image from "next/image";
+import AlugaLookLogo from "./public/AlugaLook.svg";
+import Hero from "./public/Hero.svg";
+import LogoDior from "./public/logo-dior.svg";
+import LogoGucci from "./public/logo-gucci.svg";
+import LogoPrada from "./public/logo-prada.svg";
+import LogoVogue from "./public/logo-vogue.svg";
+import Marcas1 from "./public/marcas1.jpg";
+import Marcas2 from "./public/marcas2.jpg";
+import Marcas3 from "./public/marcas3.jpg";
+import Star from "./public/Star.png";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <main className="flex flex-col items-center gap-32 pb-72 overflow-x-hidden">
+      <div className="flex flex-col p-16 gap-12 lg:flex-row">
+        <div className="w-100 flex flex-col gap-32">
+          <Image src={AlugaLookLogo} alt="logo aluga look" />
+          <Image
+            className="-ml-40 mt-10 absolute"
+            src={Star}
+            alt="logo aluga look"
+          />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          <h2 className="text-3xl w-96 font-normal">
+            Moda Inteligente <br></br> Alugue peças elegantes e modernas que
+            refletem seu estilo pessoal sem a necessidade de compra.
+          </h2>
+          <button
+            className="bg-pink text-white mx-auto p-4 border-2 
+          border-black shadow-dark font-semibold text-2xl hover:shadow-pink hover:text-pink 
+          hover:bg-white hover:border-pink transition-all active:shadow-none"
           >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            Experimente agora
+          </button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Image className="w-full" src={Hero} alt="logo aluga look" />
+      </div>
+
+      <div className="flex gap-96 bg-white shadow-dark-0 border-t-2 border-black px-48 py-6">
+        <Image src={LogoDior} alt="logo aluga look" />
+        <Image src={LogoGucci} alt="logo aluga look" />
+        <Image src={LogoPrada} alt="logo aluga look" />
+        <Image src={LogoVogue} alt="logo aluga look" />
+      </div>
+
+      <div>
+        <div className="flex flex-col lg:flex-row gap-16">
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            className="shadow-dark border-2 border-black"
+            src={Marcas1}
+            alt="logo aluga look"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+            className="shadow-dark border-2 border-black"
+            src={Marcas2}
+            alt="logo aluga look"
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+            className="shadow-dark border-2 border-black"
+            src={Marcas3}
+            alt="logo aluga look"
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        </div>
+
+        <div className="py-12 gap-12 flex flex-col w-[1100px]">
+          <h3 className="text-4xl font-semibold mx-auto">
+            Porque nos escolher?
+          </h3>
+          <p className="w-full text-justify text-2xl">
+            Nossos produtos são de qualidade, oferecemos conveniência e
+            flexibilidade cuidando e dando manutenção nas nossas peças enquanto
+            você economiza dinheiro e espaço no seu guarda-roupas.
+            <br></br>
+            <br></br>
+            Entregamos uma experiência completa de transformação.
+          </p>
+        </div>
+      </div>
+    </main>
   );
 }
